@@ -7,9 +7,12 @@
 		"test": "jest"
 	},
 	"dependencies": {
+		"moment": "^2.18.1",
 		"react": "16.0.0-alpha.12",
-		"react-native": "0.46.4",
-		"react-native-firebase": "^2.0.4"
+		"react-native": "0.47.1",
+		"react-native-firebase": "^2.0.4",
+		"redux": "^3.7.2",
+		"redux-saga": "^0.15.6"
 	},
 	"devDependencies": {
 		"babel-jest": "20.0.3",
