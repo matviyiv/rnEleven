@@ -86,19 +86,19 @@ PODS:
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - Protobuf (3.3.0)
-  - React (0.46.4):
-    - React/Core (= 0.46.4)
-  - React/BatchedBridge (0.46.4):
+  - React (0.47.1):
+    - React/Core (= 0.47.1)
+  - React/BatchedBridge (0.47.1):
     - React/Core
     - React/cxxreact_legacy
-  - React/Core (0.46.4):
-    - Yoga (= 0.46.4.React)
-  - React/cxxreact_legacy (0.46.4):
+  - React/Core (0.47.1):
+    - Yoga (= 0.47.1.React)
+  - React/cxxreact_legacy (0.47.1):
     - React/jschelpers_legacy
-  - React/jschelpers_legacy (0.46.4)
+  - React/jschelpers_legacy (0.47.1)
   - RNFirebase (2.0.4):
     - React
-  - Yoga (0.46.4.React)
+  - Yoga (0.47.1.React)
 
 DEPENDENCIES:
   - Firebase/AdMob
@@ -141,9 +141,9 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 5ad62e8200fa00ed011fe5e08d27fef72c5b1429
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: d582fecf68201eac3d79ed61369ef45734394b9c
-  React: 596d8774642d10fea20b1f24cc591fcf633f73ad
+  React: f705239a901cb3f95445c34468e5b37b6f80a0d4
   RNFirebase: 3e5a3ff431c5c8a997152f5f19d354e1ca66f65d
-  Yoga: 98e24da91afe33bb43fedaf27dafede269c04fe8
+  Yoga: 13a12502dfabb4c75b914071dcb542af800deed4
 
 PODFILE CHECKSUM: db862c645755d52b16df575c94a152583fb6a36b
 
