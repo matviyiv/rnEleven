@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
-import App from './src/App';
+import Index from './src';
 
-export default class rnEleven extends Component {
-  render() {
-    return (<App />);
-  }
-}
-
-AppRegistry.registerComponent('rnEleven', () => rnEleven);
+AppRegistry.registerComponent('rnEleven', () => Index);

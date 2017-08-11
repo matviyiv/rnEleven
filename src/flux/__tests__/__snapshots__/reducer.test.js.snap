@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reducers SELECT_MASTER_NEXT_DATE 1`] = `
+Object {
+  "s2_1+1497427200000": Object {
+    "dateEnd": "Wed Jun 14 2017 12:00:00 GMT+0300",
+    "dateStart": "Wed Jun 14 2017 11:00:00 GMT+0300",
+    "duration": 1,
+    "masterId": "e1",
+    "name": "service2",
+  },
+}
+`;
