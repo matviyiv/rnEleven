@@ -1,0 +1,33 @@
+.calendar--container {
+  background-color: white;
+}
+
+.rbc-month-view {
+  display: block !important;
+}
+
+// EditBooking styles
+
+.edit__controls .btn-default {
+  margin: 20px;
+}
+
+.edit__controls .btn-danger {
+  margin: 20px;
+}
+
+.edit__form {
+  margin: 50px;
+}
+
+.calendar--container .booking--confirmed {
+  color: white;
+  background-color: green;
+}
+
+.calendar__login-form {
+  width: 500px;
+  padding: 20px;
+  margin: 20px auto;
+  background: hsla(0,0%,100%,.7);
+}

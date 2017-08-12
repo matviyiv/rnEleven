@@ -1,5 +1,5 @@
 import {constants} from './actions';
-// import moment from 'moment';
+import moment from 'moment';
 import _ from 'lodash';
 
 const initialState = {

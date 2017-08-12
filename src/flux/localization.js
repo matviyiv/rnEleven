@@ -1,6 +1,5 @@
 import {constants} from './actions';
-// import ua from '../localization/ua.json';
-const ua = {};
+import ua from '../localization/ua.json';
 const {
   LOCALIZATION_LOADED,
   SET_LAGUAGE,

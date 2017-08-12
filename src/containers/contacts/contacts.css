@@ -1,0 +1,108 @@
+/*===== Subscribe ===*/
+
+article[role="contact"].contact-pan{ padding-top:5%;}
+
+.contact__form {
+  width:429px;
+  margin:0 auto;
+  display:block;
+  overflow:hidden;
+  padding-top:5px;
+  padding-bottom:10px
+}
+
+.contact__email-input {
+  display:block;
+  width:369px;
+  height:50px;
+  outline:none;
+  padding:0 10px;
+  border:1px solid #353535;
+  background-color: inherit;
+  font-size:15px;
+  line-height:16px;
+  color:#353535;
+  font-weight:300;
+  float:left
+}
+
+.contact--content {
+  margin: 0 20px;
+}
+
+article[role="contact"].contact-pan form label{ float:left; width:60px; height:50px; position:relative}
+
+article[role="contact"].contact-pan form label input{ font-size:0; display:block; border:none; outline:none; cursor:pointer;width:60px; height:50px; background-color:#35373e}
+
+article[role="contact"].contact-pan form label i { position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; font-size:24px; color:#babbbd; cursor:pointer; line-height:50px}
+
+article[role="contact"].contact-pan form label:hover input{ background-color:#efe51d}
+
+article[role="contact"].contact-pan form label:hover i{ color:#FFF}
+
+article[role="contact"].contact-pan form ::-webkit-input-placeholder { color:#353535; }
+
+article[role="contact"].contact-pan form ::-moz-placeholder { color:#353535; } /* firefox 19+ */
+
+article[role="contact"].contact-pan form :-ms-input-placeholder { color:#353535; } /* ie */
+
+article[role="contact"].contact-pan form input:-moz-placeholder { color:#353535; }
+
+article[role="contact"].contact-pan > p{ font-size:13px; letter-spacing:1px; font-weight:300}
+
+article[role="contact"].contact-pan .box { margin: 0 auto; letter-spacing: 1px; width: 80%; line-height: 18px; font-weight: 300; padding-top: 20px; color: #000; background-color: rgba(255,255,255,0.7); padding: 30px;}
+
+.error_message{ color:#efe51d}
+
+#success_page h3,#success_page p{color:#60ca6f }
+
+/*===== Contact ===*/
+
+article[role="contact"].contact-pan{ padding-top:5%}
+
+.contact__company-mail { font-size:30px; line-height:32px; font-weight:700}
+
+.contact__company-mail  > a{ color:#353535; text-decoration:none}
+
+article[role="contact"].contact-pan ul{ text-align:center; list-style:none; padding:0; margin:0; padding-top:8px}
+
+.contact__list > li { 
+  display: inline-block;
+  font-size: 19px;
+  line-height: 20px;
+  margin: 10px 4px;
+  width: 100%;
+}
+
+.contact__list > li i {
+  padding-right:3px
+}
+
+.contact__list > li > a {
+  color:#353535;
+  text-decoration:none
+}
+
+article[role="contact"].contact-pan a:hover{ color:#efe51d}
+
+@media (max-width: 767px) {
+  .contact__email-input {
+    width: 65%;
+  }
+
+  .contact__email-link {
+    word-wrap: break-word;
+  }
+
+  .contact__form {
+    width: inherit;
+  }
+
+  .contact__company-mail {
+    font-size: 20px;
+  }
+
+  .contact--content { 
+    margin: 0;
+  }
+}

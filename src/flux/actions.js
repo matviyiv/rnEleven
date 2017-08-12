@@ -1,19 +1,7 @@
-// import moment from 'moment';
+import moment from 'moment';
 import _ from 'lodash';
-// import firebaseApp from '../firebase-setup.js';
-// import {fetchGet} from '../utils';
-const firebaseApp = {
-  initializeApp: () => {}
-};
-const prodConfig = {
-  apiKey: 'AIzaSyB_UMGTtBFm5peIvZr-67dbNBCoUs4tRbg',
-  authDomain: 'eleven-6f723.firebaseapp.com',
-  databaseURL: 'https://eleven-6f723.firebaseio.com',
-  projectId: 'eleven-6f723',
-  storageBucket: 'eleven-6f723.appspot.com',
-  messagingSenderId: '772347263433'
-};
-const firebase = firebaseApp.initializeApp(prodConfig);
+import firebase from '../firebase-setup.js';
+import {fetchGet} from '../utils';
 
 export const constants = {
   SERVICES_LOADING: 'SERVICES_LOADING',
