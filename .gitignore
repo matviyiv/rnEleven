@@ -54,3 +54,4 @@ fastlane/screenshots
 
 android/app/google-services.json
 ios/rnEleven/GoogleService-Info.plist
+ios/GoogleService-Info.plist
