@@ -7,6 +7,7 @@ import {
   Button
 } from 'react-native';
 import firebase from './firebase-setup.js';
+import { globalStyles } from './GlobalStyles';
 
 export default class Home2 extends Component {
   static navigationOptions = {
@@ -14,7 +15,8 @@ export default class Home2 extends Component {
   }
   render() {
     return (
-      <View style={styles.container}>
+      <View style={globalStyles.ContentMask}>
+        <View style={globalStyles.TextContainer}>
         <Text style={styles.welcome}>
           Welcome to Home2!
         </Text>
@@ -22,6 +24,7 @@ export default class Home2 extends Component {
             onPress={() => this.props.navigation.navigate('Home')}
             title="Go to Home"
           />
+        </View>
       </View>
     );
   }
