@@ -1,0 +1,74 @@
+{
+  "menu": {
+    "main": "Main",
+    "whywe": "Why we",
+    "services": "Services",
+    "contacts": "Contacts",
+    "booktime": "Booking"
+  },
+  "main": {
+    "title": "Main",
+    "bodyText": "We are team of creative young people. Who want to make their ideas live. <br/>  We work for you to feel confident and trust us 100%. <br/> Beauty bar Eleven has wide range of hair style services, makeup and manicure at affordable prices.<br/> Come over! It's cozy here.",
+    "booknow": "Book now!"
+  },
+  "whywe": {
+    "title": "Why we",
+    "style_heading": "Exclusive style",
+    "style_body": "We always do our best <br/>to make our work have exclusive look<br/>",
+    "cosy_heading": "Cosy",
+    "cosy_body": "Feel tranquility and comfort <br/>during your visit <br/> to our place.",
+    "emoji_heading": "Great emotions",
+    "emoji_body": "We are profesionals in our work<br/> - getting great emotions<br/> is guaranteed."
+  },
+  "services": {
+    "title": "Services",
+    "hair_heading": "hair style",
+    "hair_body": "Drop by for a hair cut, coloring or just<br/>hairstyle - have a rest!",
+    "makeup_heading": "make up",
+    "makeup_body": "Party? Anyother event?<br/>come for a <br/> makeup",
+    "nail_heading": "nail art",
+    "nail_body": "You want something incredible?<br/> don't postpone - we<br/>know what you will like",
+    "certificate_heading": "Certificates",
+    "certificate_body": "Our services  - <br/> is a great gift!<br/> Call for details"
+  },
+  "contacts": {
+    "title": "Contacts",
+    "submit_success": "thank you for subscription",
+    "address": "Viacheslava Chornovola Ave, 31, Lviv",
+    "placeholder": "Enter email...",
+    "subscribe": "Subscribe and get latest newst from us!"
+  },
+  "step1": {
+    "title": "Choose service"
+  },
+  "step2": {
+    "title": "What would you like?",
+    "priceTag": "from {price}UAH"
+  },
+  "step3": {
+    "title": "Choose time and master",
+    "doesnt_work1": "Master is not working or is already booked on this day, try different date of ",
+    "doesnt_work2": "day",
+    "odd": "odd",
+    "even": "even",
+    "today": "Today",
+    "placeholderText": "Choose date of visit"
+  },
+  "final_form": {
+    "title": "Chosen services",
+    "name_label": "Name:",
+    "name_placeholder": "name",
+    "number_label": "Mobile number:",
+    "info_label": "Extra information:",
+    "info_placeholder": "I would like ...",
+    "submit": "Send",
+    "add_btn": "Add service",
+    "invalid_required": "This field is mandatory",
+    "invalid_number": "Please enter valid phone number"
+  },
+  "finish": {
+    "title": "Done",
+    "body": "Our administrator will contact you soon.",
+    "main_page": "Back to main"
+  }
+}

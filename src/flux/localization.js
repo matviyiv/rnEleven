@@ -1,22 +1,17 @@
 import {constants} from './actions';
 import ua from '../localization/ua.json';
+import en from '../localization/en.json';
 const {
-  LOCALIZATION_LOADED,
   SET_LAGUAGE,
   } = constants;
 const initialState = {
-  currentLocale: 'ua',
-  currentLocalization: ua,
+  currentLocale: '',
+  currentLocalization: null,
   ua: ua,
+  en: en,
 };
 export function localization(state = initialState, action) {
   const actions = {
-    [LOCALIZATION_LOADED]: (st, {localization, locale}) => {
-      st[locale] = localization;
-      st.currentLocale = locale;
-      st.currentLocalization = st[locale];
-      return { ...st };
-    },
     [SET_LAGUAGE]: (st, {locale}) => {
       st.currentLocale = locale;
       st.currentLocalization =  st[locale];
