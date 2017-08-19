@@ -19,7 +19,7 @@ export class LanguageSelector extends Component {
   render() {
     return (
       <View style={globalStyles.ContentMask}>
-        <View style={globalStyles.TextContainer}>
+        <View style={[globalStyles.TextContainer, styles.Conatiner]}>
           <TouchableHighlight
             onPress={this.onPress('ua')}
             underlayColor='rgba(255,255,255,0.7)'
@@ -41,6 +41,9 @@ export class LanguageSelector extends Component {
 }
 
 const styles = StyleSheet.create({
+  Conatiner: {
+    paddingTop: 30,
+  },
   Button: {
     paddingTop: 20,
     paddingBottom: 20,

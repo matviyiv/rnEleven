@@ -1,14 +1,14 @@
 import { TabNavigator, TabBarBottom } from 'react-navigation';
 
-import Home from './Home';
-import Home2 from './Home2';
+import Main from './containers/main/Main';
+import Whywe from './containers/whywe/Whywe';
 
 export const TabNavigation = TabNavigator({
-  Home: {
-    screen: Home,
+  Main: {
+    screen: Main,
   },
-  Home2: {
-    screen: Home2,
+  Whywe: {
+    screen: Whywe,
   },
 }, {
   tabBarOptions: {

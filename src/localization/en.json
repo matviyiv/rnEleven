@@ -1,26 +1,25 @@
 {
-  "menu": {
-    "main": "Main",
-    "whywe": "Why we",
-    "services": "Services",
-    "contacts": "Contacts",
-    "booktime": "Booking"
-  },
   "main": {
+    "tabBarLabel": "Main",
     "title": "Main",
-    "bodyText": "We are team of creative young people. Who want to make their ideas live. <br/>  We work for you to feel confident and trust us 100%. <br/> Beauty bar Eleven has wide range of hair style services, makeup and manicure at affordable prices.<br/> Come over! It's cozy here.",
+    "bodyText1": "We are team of creative young people. Who want to make their ideas live.",
+    "bodyText2": "We work for you to feel confident and trust us 100%.",
+    "bodyText3": "Beauty bar Eleven has wide range of hair style services, makeup and manicure at affordable prices.",
+    "bodyText4": "Come over! It's cozy here.",
     "booknow": "Book now!"
   },
   "whywe": {
+    "tabBarLabel": "Why we",
     "title": "Why we",
     "style_heading": "Exclusive style",
-    "style_body": "We always do our best <br/>to make our work have exclusive look<br/>",
+    "style_body": "We always do our best <br/>to make our work have exclusive look",
     "cosy_heading": "Cosy",
     "cosy_body": "Feel tranquility and comfort <br/>during your visit <br/> to our place.",
     "emoji_heading": "Great emotions",
     "emoji_body": "We are profesionals in our work<br/> - getting great emotions<br/> is guaranteed."
   },
   "services": {
+    "tabBarLabel": "Services",
     "title": "Services",
     "hair_heading": "hair style",
     "hair_body": "Drop by for a hair cut, coloring or just<br/>hairstyle - have a rest!",
@@ -32,6 +31,7 @@
     "certificate_body": "Our services  - <br/> is a great gift!<br/> Call for details"
   },
   "contacts": {
+    "tabBarLabel": "Contacts",
     "title": "Contacts",
     "submit_success": "thank you for subscription",
     "address": "Viacheslava Chornovola Ave, 31, Lviv",

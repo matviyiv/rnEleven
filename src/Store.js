@@ -2,22 +2,24 @@ import { applyMiddleware, createStore, combineReducers, compose } from 'redux';
 import {persistStore, autoRehydrate} from 'redux-persist'
 import thunkMiddleware from 'redux-thunk';
 import { AsyncStorage } from 'react-native';
+import logger from "redux-logger";
 
 import { appReducer } from './flux/reducers';
 import { localization } from './flux/localization';
 
 export function setupStore(callback) {
   const reducer = combineReducers({ app: appReducer, str: localization });
-  // const createStoreWithMiddleware = applyMiddleware(
-  //     thunkMiddleware // lets us dispatch() functions
-  //   )(createStore);
-  // const store = createStoreWithMiddleware(reducer);
+  let middlewares = [thunkMiddleware];
+
+  if (__DEV__) {
+    middlewares.push(logger);
+  }
 
   const store = createStore(
     reducer,
     undefined,
     compose(
-      applyMiddleware(thunkMiddleware),
+      applyMiddleware(...middlewares),
       autoRehydrate()
     )
   )

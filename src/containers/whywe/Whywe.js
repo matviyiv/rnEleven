@@ -1,16 +1,48 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './whywe.css';
-import FloatingButton from '../../components/FloatingButton';
+// import FloatingButton from '../../components/FloatingButton';
 import { connect } from 'react-redux';
 
+import {
+  StyleSheet,
+  Text,
+  View,
+  Button,
+  ScrollView
+} from 'react-native';
+import { globalStyles } from '../../GlobalStyles';
+
 export class Whywe extends Component {
-  static propTypes = {
-    history: PropTypes.object.isRequired
-  }
+  static navigationOptions = ({ navigation }) => ({
+    tabBarLabel: <WhyweTabTitle />,
+  });
+
   render() {
     const {str} = this.props;
-    return (<div>
+    const styleBody = str.style_body.split('<br/>');
+    const cosyBody = str.cosy_body.split('<br/>');
+    const emojiBody = str.emoji_body.split('<br/>');
+    
+    return (<ScrollView>
+      <View style={globalStyles.ContentMask}>
+        <View style={globalStyles.PageTitleUnderline}>
+          <Text style={globalStyles.PageTitle}>{str.title.toUpperCase()}</Text>
+        </View>
+        <View style={globalStyles.TextContainer}>
+          <Text style={styles.BodyText}>{str.style_heading}</Text>
+          {styleBody.map((snippet, index) => <Text key={index} style={globalStyles.BodyText}>{snippet}</Text>)}
+        </View>
+        <View style={globalStyles.TextContainer}>
+          <Text style={styles.BodyText}>{str.cosy_heading}</Text>
+          {cosyBody.map((snippet, index) => <Text key={index} style={globalStyles.BodyText}>{snippet}</Text>)}
+        </View>
+        <View style={globalStyles.TextContainer}>
+          <Text style={styles.BodyText}>{str.emoji_heading}</Text>
+          {emojiBody.map((snippet, index) => <Text key={index} style={globalStyles.BodyText}>{snippet}</Text>)}
+        </View>
+      </View>
+    </ScrollView>);
+    /*
         <FloatingButton showBookingButton history={this.props.history}/>
          <section  className="">
           <article role="whywe" className="whywe-pan">
@@ -34,11 +66,24 @@ export class Whywe extends Component {
              </article>
       </section>
     </div>);
+    */
   }
 }
+
+const styles = StyleSheet.create({
+  AfterText: {
+    marginBottom: 15
+  }
+});
 
 function mapStateToProps(state) {
   return { str: state.str.currentLocalization.whywe };
 }
 
 export default connect(mapStateToProps)(Whywe);
+
+function TabTitle(props) {
+  return <Text>{props.str.tabBarLabel}</Text>
+}
+
+const WhyweTabTitle = connect(mapStateToProps)(TabTitle);
